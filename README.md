@@ -1,5 +1,14 @@
 # potential-crud
 
+### Especificações
+
+* **Docker** para virtualização de *container*
+* **Laminas API Tools** para geração de rotas, filtros e validações
+* **MySQL** como SGDB
+* **Doctrine ORM** para interface de persistência
+* **Composer** para gerenciamento de dependências
+* **PHPUnit** para os testes unitários
+
 ### Considerações
 
 * Não houve implementação de interface gráfica.
@@ -41,4 +50,9 @@ docker-compose exec web composer development-enable -d /var/www/html/
 Executanto os testes unitário
 ```
 docker-compose exec web php /var/www/html/vendor/bin/phpunit --coverage-text
+```
+
+Representação gerada pelo PHPUnit para visualização dos testes
+```
+./data/log/codeCoverage/index.html
 ```
