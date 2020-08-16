@@ -4,14 +4,23 @@
          bootstrap="vendor/autoload.php"
          colors="true">
     <testsuites>
-        <testsuite name="api-tools-skeleton">
+        <testsuite name="Application Test Suite">
             <directory>./module/Application/test</directory>
         </testsuite>
+        <testsuite name="Api Test Suite">
+            <directory>./module/PotentialCrud/test</directory>
+        </testsuite>
     </testsuites>
+    <logging>
+        <log type="coverage-html" target="./data/log/codeCoverage"
+            lowUpperBound="50" highLowerBound="80" showUncoveredFiles="false" />
+    </logging>
 
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
             <directory suffix=".php">./module/Application/src</directory>
+            <directory suffix=".php">./module/PotentialCrud/src</directory>
         </whitelist>
+        
     </filter>
 </phpunit>
