@@ -21,7 +21,7 @@
 * Campos vazios possuem filtro para *null* para consistência.
 * *querystring* para página é *page*.
 * *querystring* para itens por página é *page_size*.
-* Por padrão não há paginação. O retorno do *get* de *colletions* traz todos os itens.
+* Por padrão não há paginação. O retorno do *get* de *collections* traz todos os itens.
 
 ### Configurando
 
