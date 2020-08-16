@@ -47,7 +47,7 @@ Alterando para ambiente *development*
 docker-compose exec web composer development-enable -d /var/www/html/
 ```
 
-Executanto os testes unitário
+Executanto os testes unitários
 ```
 docker-compose exec web php /var/www/html/vendor/bin/phpunit --coverage-text
 ```
