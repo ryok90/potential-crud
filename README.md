@@ -4,18 +4,21 @@
 
 * Não houve implementação de interface gráfica.
 * O campo *nome* é obrigatório somente para propósitos de validação de criação.
-* O campo *sexo* possui filtro para *uppercase* por garantia.
+* O campo *sexo* possui filtro para *uppercase* para consistência.
 * O campo *idade* possui limite de 10 dígitos.
-* O campo *idade* possui filtro de digitos.
+* O campo *idade* possui filtro de dígitos.
 * O campo *datanascimento* tem formatação obrigatória de '*Y-m-d*' (Ex.: 2020-12-31).
 * Todos os campos *varchar* possuem limite de 64 caracteres.
 * Campos vazios possuem filtro para *null* para consistência.
+* *querystring* para página é *page*.
+* *querystring* para itens por página é *page_size*.
+* Por padrão não há paginação. O retorno do *get* de *colletions* traz todos os itens.
 
 ### Configurando
 
 Levantando o Docker
 ```
-docker-compose up
+docker-compose up -d
 ```
 
 Instalando dependências (Pode demorar alguns minutos)
