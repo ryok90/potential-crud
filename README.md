@@ -11,6 +11,7 @@
 
 ### Considerações
 
+* Docker mapeado para localhost:80
 * Não houve implementação de interface gráfica.
 * O campo *nome* é obrigatório somente para propósitos de validação de criação.
 * O campo *sexo* possui filtro para *uppercase* para consistência.
