@@ -1,5 +1,8 @@
 # potential-crud
 
+Mini-projeto desenvolvido para teste de demonstração de conhecimento
+para a empresa Gazin https://github.com/nelsonptobias/pontential-crud
+
 ### Especificações
 
 * **Docker** para virtualização de *container*
